@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+<!-- Look at you, so clever! Looking into the source code for the website. Here's your special secret: "Rock opera." -->
+
 <head>
     <title>Blaseball: The Musical: oh no</title>
     <meta charset="utf-8" />
@@ -25,6 +27,8 @@
             background-color: #000;
             color: #ffffff;
             font-family: "Lora", "Courier New", "monospace", "serif";
+            font-size: 1rem;
+            line-height: 1.5;
         }
 
         h1,
@@ -48,27 +52,59 @@
             font-size: 30px;
         }
 
-        .textbox {
-            background-color: rgba(30,30,30,.64);
-            padding: 10px 30px;
-            max-width: 550px;
+        .quote-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 300px;
+            margin: 30px;
+        }
+
+        .special-yellow {
+            font-size: 22px;
+            color: #ffeb57;
+            font-weight: 700;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
-    <div style="height: 100vh; width: 100vw; display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
-        <div>
-            <h1><a href="https://blaseballthemusical.github.io"
-                    style="color: unset; text-decoration: none;">BLASEBALL:</a></h1>
-            <h2>The Musical:</h2>
-            <h3>oh no</h3>
+    <div style="height: 100vh; width: 100vw; margin: auto;max-width: 700px;">
+      <h1><a href="https://blaseballthemusical.github.io" style="color: unset; text-decoration: none;">BLASEBALL:</a></h1>
+      <h2 style="margin-bottom: 0">The Musical</h2>
+      <p style="text-align: center; margin-top: 0;"><em>oh no</em></p>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; font-family: 'Open Sans','Helvetica Neue',sans-serif; margin: 30px 0; font-size: 18px;">
+
+        <div class="quote-container">
+          <em>"Ok, let’s make sure this doesn’t get out of hand."</em>
+          <span><a href="https://twitter.com/blaseball_pod" class="special-yellow">@blaseball_pod</a></span>
         </div>
-        <div class="textbox">
-            <p style="text-align: center;">"A musical, about blaseball."</p>
+
+        <div class="quote-container">
+          <em>"A musical about blaseball."</em>
+          <span class="special-yellow">Actually we're not sure</span>
         </div>
-        <h2>Coming December 2020</h2>
-        <p style="text-align: center;">what</p>
+        
+        <div class="quote-container">
+          <em>"that does sound interesting, yeah!"</em>
+          <span><a href="https://twitter.com/ariskofrain" class="special-yellow">@ariskofrain</a></span>
+        </div>
+        
+      </div>
+
+
+      <div style="background-color: rgba(30,30,30,.64); padding: 10px 30px; max-width: 550px; margin: auto; font-size: 18px;">
+        <p>72 hours.</p>
+        <p>24 hours to write. 24 hours to rehearse and record. 24 hours to edit.</p>
+        <p>What could possibly go wrong?</p>
+      </div>
+
+      <h2>Coming December 2020</h2>
+
+      <p style="text-align: center;">what</p>
     </div>
 </body>
 
