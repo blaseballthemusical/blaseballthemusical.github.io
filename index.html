@@ -60,6 +60,20 @@
             color: #28a745;
         }
 
+        .content {
+          margin: auto;
+          max-width: 700px;
+          padding-bottom: 2em;
+        }
+
+        section {
+          background-color: rgba(30,30,30,.64);
+          padding: 10px 30px;
+          max-width: 550px;
+          margin: auto;
+          font-size: 18px;
+        }
+
         .quote-container {
             text-align: center;
             display: flex;
@@ -77,7 +91,7 @@
 
         .team {
           list-style-type: none;
-          padding-inline: 0;
+          padding: 0;
         }
         .team li {
           list-style: none;
@@ -100,11 +114,39 @@
           font-size: small;
           align-self: center;
         }
+
+        @media only screen and (max-width: 600px) {
+          .content {
+            max-width: initial;
+          }
+          section {
+            max-width: initial;
+          }
+          .team li {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: flex-start;
+            margin: 25px 0px;
+          }
+          .team span {
+            margin: auto;
+            align-self: start;
+          }
+          .team .name {
+            order: 1;
+          }
+          .team .role {
+            order: 2;
+          }
+          .team .pronouns {
+            order: 3;
+          }
+        }
     </style>
 </head>
 
 <body>
-    <div style="width: 100vw; margin: auto;max-width: 700px; padding-bottom: 2em;">
+    <div class="content">
       <h1><a href="https://blaseballthemusical.github.io" style="color: unset; text-decoration: none;">BLASEBALL:</a></h1>
       <h2 style="margin-bottom: 0">The Musical</h2>
       <p style="text-align: center; margin-top: 0;"><em>oh no</em></p>
@@ -135,7 +177,7 @@
         <p style="text-align: center;">what</p>
       </div>
 
-      <div style="background-color: rgba(30,30,30,.64); padding: 10px 30px; max-width: 550px; margin: auto; font-size: 18px;">
+      <section>
           <p>72 hours.</p>
           <p>24 hours to write. 24 hours to rehearse and record. 24 hours to edit.</p>
           <p>A show to end all shows...and possibly the multiverse.</p> 
@@ -336,7 +378,7 @@
           </ul>
           <hr/>
           <p style="font-size: small">Lyre icon by Lorc via <a href="https://game-icons.net/">Game-Icons.net</a></p>
-      </div>
+      </section>
     </div>
 </body>
 
