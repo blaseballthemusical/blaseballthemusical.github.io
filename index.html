@@ -60,6 +60,21 @@
             color: #28a745;
         }
 
+        .content {
+          /*width: 100vw;*/
+          margin: auto;
+          max-width: 700px;
+          /*padding-bottom: 2em;*/
+        }
+
+        section {
+          background-color: rgba(30,30,30,.64);
+          padding: 10px 30px;
+          max-width: 550px;
+          margin: auto;
+          /*font-size: 18px;*/
+        }
+
         .quote-container {
             text-align: center;
             display: flex;
@@ -100,11 +115,39 @@
           font-size: small;
           align-self: center;
         }
+
+        @media only screen and (max-width: 600px) {
+          .content {
+            max-width: initial;
+          }
+          section {
+            max-width: initial;
+          }
+          .team li {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: flex-start;
+            margin: 25px 0px;
+          }
+          .team span {
+            margin: auto;
+            align-self: start;
+          }
+          .team .name {
+            order: 1;
+          }
+          .team .role {
+            order: 2;
+          }
+          .team .pronouns {
+            order: 3;
+          }
+        }
     </style>
 </head>
 
 <body>
-    <div style="width: 100vw; margin: auto;max-width: 700px; padding-bottom: 2em;">
+    <div class="content">
       <h1><a href="https://blaseballthemusical.github.io" style="color: unset; text-decoration: none;">BLASEBALL:</a></h1>
       <h2 style="margin-bottom: 0">The Musical</h2>
       <p style="text-align: center; margin-top: 0;"><em>oh no</em></p>
@@ -135,208 +178,208 @@
         <p style="text-align: center;">what</p>
       </div>
 
-      <div style="background-color: rgba(30,30,30,.64); padding: 10px 30px; max-width: 550px; margin: auto; font-size: 18px;">
-          <p>72 hours.</p>
-          <p>24 hours to write. 24 hours to rehearse and record. 24 hours to edit.</p>
-          <p>A show to end all shows...and possibly the multiverse.</p> 
-          <hr/>
-          <h2>Support us</h2>
-          <p style="margin-bottom: 2em;">Pre-order the album on blandcamp at <a href="https://blaseballmusical.bandcamp.com/album/blaseball-the-musical">blandcamp.com/blaseballmusical</a>.</p>
-          <hr/>
-          <h2>Crew</h2>
-          <ul class="team">
-            <li>
-              <span class="role">Producer & Director</span>
-              <span class="name"><a href="https://blaseballpodcast.com">Kimberly Dauber</a></span>
-              <span class="pronouns">(she/her)</span>
-            </li>
-            <li>
-              <span class="role">Writer</span>
-              <span class="name"><a href="https://twitter.com/mattycblack">Matthew Black</a></span>
-              <span class="pronouns">(they/he)</span>
-            </li>
-            <li>
-              <span class="role">Composer</span>
-              <span class="name"><a href="https://fourth-strike.com/">rain</a></span>
-              <span class="pronouns">(it/its)</span>
-            </li>
-            <li>
-              <span class="role">Sound designer</span>
-              <span class="name"><a href="https://twitter.com/jbonechristian">BONES</a></span>
-              <span class="pronouns">(they/she)</span>
-            </li>
-            <li>
-              <span class="role">Artist</span>
-              <span class="name">Kate</span>
-              <span class="pronouns">(they/them)</span>
-            </li>
-            <li>
-              <span class="role">Assistant Audio Technician</span>
-              <span class="name">Lucas</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Assistant Producer</span>
-              <span class="name">Hollis</span>
-              <span class="pronouns">(they/them)</span>
-            </li>
-            <li>
-              <span class="role">Script Supervisor & Program Designer</span>
-              <span class="name">Ace</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Production Assistant</span>
-              <span class="name">Julian</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Production Assistant</span>
-              <span class="name">Zane</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Production Assistant</span>
-              <span class="name">Evie</span>
-              <span class="pronouns">(she/her)</span>
-            </li>
-          </ul>
-          <hr/>
-          <h2>Cast</h2>
-          <ul class="team">
-            <li>
-              <span class="role">Sebastian Telephone</span>
-              <span class="name">Erica Ewell</span>
+      <section>
+        <p>72 hours.</p>
+        <p>24 hours to write. 24 hours to rehearse and record. 24 hours to edit.</p>
+        <p>A show to end all shows...and possibly the multiverse.</p> 
+        <hr/>
+        <h2>Support us</h2>
+        <p style="margin-bottom: 2em;">Pre-order the album on blandcamp at <a href="https://blaseballmusical.bandcamp.com/album/blaseball-the-musical">blandcamp.com/blaseballmusical</a>.</p>
+        <hr/>
+        <h2>Crew</h2>
+        <ul class="team">
+          <li>
+            <span class="role">Producer & Director</span>
+            <span class="name"><a href="https://blaseballpodcast.com">Kimberly Dauber</a></span>
             <span class="pronouns">(she/her)</span>
-            </li>
-            <li>
-              <span class="role">Conner Haley</span>
-              <span class="name">Isaac Ludington</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Jessica Telephone</span>
-              <span class="name">Quinne Larsen</span>
-              <span class="pronouns">(she/they)</span>
-            </li>
-            <li>
-              <span class="role">August Mina</span>
-              <span class="name">yana</span>
-              <span class="pronouns">(it/they)</span>
-            </li>
-            <li>
-              <span class="role">The Collective Dadconscious</span>
-              <span class="name">Matthew Black</span>
-              <span class="pronouns">(they/he)</span>
-            </li>
-            <li>
-              <span class="role">This/That Reporter</span>
-              <span class="name">Lucretius S.W.F. Frankenstein</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Sam Scandal, Dadsemble</span>
-              <span class="name">Levi Squier</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Dunlap Figueroa, Dadsemble</span>
-              <span class="name">Anna Webster</span>
-              <span class="pronouns">(she/her)</span>
-            </li>
-            <li>
-              <span class="role">Gallup Crueller, Fansemble</span>
-              <span class="name">Emma Shannon</span>
-              <span class="pronouns">(any)</span>
-            </li>
-            <li>
-              <span class="role">Dadsemble</span>
-              <span class="name">Andrew J. Pytel</span>
-              <span class="pronouns">(he/they)</span>
-            </li>
-            <li>
-              <span class="role">Dadsemble</span>
-              <span class="name">Jerad "Dr. J" Bailey</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Dadsemble</span>
-              <span class="name">Julianna Belles</span>
-              <span class="pronouns">(she/her)</span>
-            </li>
-            <li>
-              <span class="role">Dadsemble</span>
-              <span class="name">Louisa Blatt</span>
-              <span class="pronouns">(she/her)</span>
-            </li>
-            <li>
-              <span class="role">Fansemble</span>
-              <span class="name">Isabela Spielman</span>
-              <span class="pronouns">(she/her)</span>
-            </li>
-            <li>
-              <span class="role">Fansemble</span>
-              <span class="name">Jesse Vetters</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Fansemble</span>
-              <span class="name">John Bettonville</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Fansemble</span>
-              <span class="name">Kate Hardly</span>
-              <span class="pronouns">(she/her)</span>
-            </li>
-            <li>
-              <span class="role">Fansemble</span>
-              <span class="name">Kimberly Dauber</span>
-              <span class="pronouns">(she/her)</span>
-            </li>
-            <li>
-              <span class="role">Fansemble</span>
-              <span class="name">Michael Lepore</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Fansemble</span>
-              <span class="name">Philomena Sherwood</span>
-              <span class="pronouns">(she/they)</span>
-            </li>
-            <li>
-              <span class="role">Fansemble</span>
-              <span class="name">Rodrigo Borges</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-          </ul>
-          <hr/>
-          <h2>Instrumentalists</h2>
-          <ul class="team">
-            <li>
-              <span class="role">Bass</span>
-              <span class="name">Deidra Skye</span>
-              <span class="pronouns">(she/they)</span>
-            </li>
-            <li>
-              <span class="role">Acoustic guitar</span>
-              <span class="name">Louie Zong</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Electric guitar</span>
-              <span class="name">Neil Bickford</span>
-              <span class="pronouns">(he/him)</span>
-            </li>
-            <li>
-              <span class="role">Additional instruments</span>
-              <span class="name">rain</span>
-              <span class="pronouns">(it/its)</span>
-            </li>
-          </ul>
-          <hr/>
-          <p style="font-size: small">Lyre icon by Lorc via <a href="https://game-icons.net/">Game-Icons.net</a></p>
-      </div>
+          </li>
+          <li>
+            <span class="role">Writer</span>
+            <span class="name"><a href="https://twitter.com/mattycblack">Matthew Black</a></span>
+            <span class="pronouns">(they/he)</span>
+          </li>
+          <li>
+            <span class="role">Composer</span>
+            <span class="name"><a href="https://fourth-strike.com/">rain</a></span>
+            <span class="pronouns">(it/its)</span>
+          </li>
+          <li>
+            <span class="role">Sound designer</span>
+            <span class="name"><a href="https://twitter.com/jbonechristian">BONES</a></span>
+            <span class="pronouns">(they/she)</span>
+          </li>
+          <li>
+            <span class="role">Artist</span>
+            <span class="name">Kate</span>
+            <span class="pronouns">(they/them)</span>
+          </li>
+          <li>
+            <span class="role">Assistant Audio Technician</span>
+            <span class="name">Lucas</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Assistant Producer</span>
+            <span class="name">Hollis</span>
+            <span class="pronouns">(they/them)</span>
+          </li>
+          <li>
+            <span class="role">Script Supervisor & Program Designer</span>
+            <span class="name">Ace</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Production Assistant</span>
+            <span class="name">Julian</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Production Assistant</span>
+            <span class="name">Zane</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Production Assistant</span>
+            <span class="name">Evie</span>
+            <span class="pronouns">(she/her)</span>
+          </li>
+        </ul>
+        <hr/>
+        <h2>Cast</h2>
+        <ul class="team">
+          <li>
+            <span class="role">Sebastian Telephone</span>
+            <span class="name">Erica Ewell</span>
+          <span class="pronouns">(she/her)</span>
+          </li>
+          <li>
+            <span class="role">Conner Haley</span>
+            <span class="name">Isaac Ludington</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Jessica Telephone</span>
+            <span class="name">Quinne Larsen</span>
+            <span class="pronouns">(she/they)</span>
+          </li>
+          <li>
+            <span class="role">August Mina</span>
+            <span class="name">yana</span>
+            <span class="pronouns">(it/they)</span>
+          </li>
+          <li>
+            <span class="role">The Collective Dadconscious</span>
+            <span class="name">Matthew Black</span>
+            <span class="pronouns">(they/he)</span>
+          </li>
+          <li>
+            <span class="role">This/That Reporter</span>
+            <span class="name">Lucretius S.W.F. Frankenstein</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Sam Scandal, Dadsemble</span>
+            <span class="name">Levi Squier</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Dunlap Figueroa, Dadsemble</span>
+            <span class="name">Anna Webster</span>
+            <span class="pronouns">(she/her)</span>
+          </li>
+          <li>
+            <span class="role">Gallup Crueller, Fansemble</span>
+            <span class="name">Emma Shannon</span>
+            <span class="pronouns">(any)</span>
+          </li>
+          <li>
+            <span class="role">Dadsemble</span>
+            <span class="name">Andrew J. Pytel</span>
+            <span class="pronouns">(he/they)</span>
+          </li>
+          <li>
+            <span class="role">Dadsemble</span>
+            <span class="name">Jerad "Dr. J" Bailey</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Dadsemble</span>
+            <span class="name">Julianna Belles</span>
+            <span class="pronouns">(she/her)</span>
+          </li>
+          <li>
+            <span class="role">Dadsemble</span>
+            <span class="name">Louisa Blatt</span>
+            <span class="pronouns">(she/her)</span>
+          </li>
+          <li>
+            <span class="role">Fansemble</span>
+            <span class="name">Isabela Spielman</span>
+            <span class="pronouns">(she/her)</span>
+          </li>
+          <li>
+            <span class="role">Fansemble</span>
+            <span class="name">Jesse Vetters</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Fansemble</span>
+            <span class="name">John Bettonville</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Fansemble</span>
+            <span class="name">Kate Hardly</span>
+            <span class="pronouns">(she/her)</span>
+          </li>
+          <li>
+            <span class="role">Fansemble</span>
+            <span class="name">Kimberly Dauber</span>
+            <span class="pronouns">(she/her)</span>
+          </li>
+          <li>
+            <span class="role">Fansemble</span>
+            <span class="name">Michael Lepore</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Fansemble</span>
+            <span class="name">Philomena Sherwood</span>
+            <span class="pronouns">(she/they)</span>
+          </li>
+          <li>
+            <span class="role">Fansemble</span>
+            <span class="name">Rodrigo Borges</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+        </ul>
+        <hr/>
+        <h2>Instrumentalists</h2>
+        <ul class="team">
+          <li>
+            <span class="role">Bass</span>
+            <span class="name">Deidra Skye</span>
+            <span class="pronouns">(she/they)</span>
+          </li>
+          <li>
+            <span class="role">Acoustic guitar</span>
+            <span class="name">Louie Zong</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Electric guitar</span>
+            <span class="name">Neil Bickford</span>
+            <span class="pronouns">(he/him)</span>
+          </li>
+          <li>
+            <span class="role">Additional instruments</span>
+            <span class="name">rain</span>
+            <span class="pronouns">(it/its)</span>
+          </li>
+        </ul>
+        <hr/>
+        <p style="font-size: small">Lyre icon by Lorc via <a href="https://game-icons.net/">Game-Icons.net</a></p>
+      </section>
     </div>
 </body>
 
