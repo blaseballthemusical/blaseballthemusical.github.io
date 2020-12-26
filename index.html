@@ -116,6 +116,26 @@
           align-self: center;
         }
 
+        .watch-now {
+          text-align: center;
+          font-size: 48px;
+          font-weight: bold;
+          margin: 0
+        }
+        .timer {
+          text-align: center;
+          font-family: monospace;
+        }
+        .timer span {
+          font-size: 48px;
+        }
+        .digit {
+          background: #ffffff24;
+        }
+        .coming-soon {
+          display: none;
+        }
+
         @media only screen and (max-width: 600px) {
 
           h1 {
@@ -177,11 +197,23 @@
           <em>"ring ring, little bell"</em>
           <span><a class="special-yellow" href="https://twitter.com/blaseballmuse">@BlaseballMuse</a></span>
         </div>
-        
       </div>
-
       <div>
-        <p style="text-align: center; font-size: 48px; font-weight: bold; margin: 0"><a href="https://www.youtube.com/watch?v=keKpHmwfIMk">Watch Now on YouTube</a></p>
+        <p class="watch-now"><a href="https://www.youtube.com/watch?v=keKpHmwfIMk">Watch Now on YouTube</a></p>
+        <div class="coming-soon">
+          <p style="text-align: center;font-size: 48px;font-weight: bold; margin: 0">Streaming in</p>
+          <p class="timer">
+            <span id="h1" class="digit">0</span>
+            <span id="h2" class="digit">3</span>
+            <span>:</span>
+            <span id="m1" class="digit">5</span>
+            <span id="m2" class="digit">0</span>
+            <span>:</span>
+            <span id="s1" class="digit">5</span>
+            <span id="s2" class="digit">5</span>
+          </p>
+          <p style="text-align: center;font-size: 48px;font-weight: bold; margin: 0"><a href="https://www.youtube.com/watch?v=keKpHmwfIMk">Watch on YouTube</a></p>
+        </div>
 
         <p style="text-align: center;">what</p>
       </div>
@@ -404,6 +436,41 @@
           <p style="font-size: small">Lyre icon by Lorc via <a href="https://game-icons.net/">Game-Icons.net</a></p>
       </section>
     </div>
+    <script>
+      window.addEventListener("load", function (){
+        var premiere = new Date("2020-12-26T21:00:00.000Z")
+        var loadedAt = new Date()
+        if (loadedAt >= premiere) {
+          return
+        }
+
+        function setTime(field, value) {
+          value = value.toString()
+          if (value.length == 2) {
+            document.getElementById(field + '1').textContent = value[0]
+            document.getElementById(field + '2').textContent = value[1]
+          } else {
+            document.getElementById(field + '1').textContent = '0'
+            document.getElementById(field + '2').textContent = value[0]
+          }
+        }
+
+        function count () {
+          var eta = Math.floor((premiere.getTime() - new Date().getTime()) / 1000)
+          var s = eta % 60
+          var m = (Math.floor((eta - s) / 60) % 60)
+          var h = ((Math.floor((eta - s) / 60) - m) % 60)
+
+          setTime('h', h)
+          setTime('m', m)
+          setTime('s', s)
+        }
+        count()
+        setInterval(count, 1000)
+        document.getElementsByClassName('watch-now')[0].style.display = 'none'
+        document.getElementsByClassName('coming-soon')[0].style.display = 'block'
+      })
+    </script>
 </body>
 
 </html>
